@@ -1,1 +1,1 @@
-h1 {	color: red;}#container {	width: 400px;	height: 400px;	position: relative;	background: yellow;}#animate {	width: 50px;	height: 50px;	position: absolute;	background-color: red;}
+h1 {	color: red;}.block {    position: absolute;    background-color: #abc;    left: 50px;    width: 90px;    height: 90px;    margin: 5px;  }
