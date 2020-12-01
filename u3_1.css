@@ -1,1 +1,1 @@
-#delete-btn {	float: right;}#s2  {  position: absolute;  width: 99%;  bottom: 30px;} 
+#delete-btn {	float: right;}#s2  {  position: absolute;  width: 99%;  bottom: 30px;	background-color: #F1F1F1;} body {	background-color:#B0C4DE;}* {font-family: dolly-new, sans-serif;font-style: normal;font-weight: 400;}header {	background-color: #F1F1F1;	padding: 30px;/* 	width: 80%; */	text-align: center;}h1{font-family: paganini, serif;font-style: normal;font-weight: 300;  letter-spacing: 3px;}
