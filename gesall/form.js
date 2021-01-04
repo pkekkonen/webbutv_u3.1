@@ -1,0 +1,1 @@
+$(document).ready(function() {	$(function() {	  $('#main-menu').smartmenus({// 	   mainMenuSubOffsetY: 100,// 	   subMenusSubOffsetY: 10   	});   	});	  });
