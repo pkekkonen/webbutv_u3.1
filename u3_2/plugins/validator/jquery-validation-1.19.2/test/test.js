@@ -971,9 +971,9 @@ QUnit.test( "option: focusCleanup with wrapper", function( assert ) {
 		wrapper: "span"
 	} );
 	form.valid();
-	assert.ok( form.is( ":has(span:visible:has(.error#username-error))" ) );
+	assert.ok( form.is( ":has(span:visible:has(.error#username=error))" ) );
 	$( "#username" ).focus().trigger( "focusin" );
-	assert.ok( !form.is( ":has(span:visible:has(.error#username-error))" ) );
+	assert.ok( !form.is( ":has(span:visible:has(.error#username=error))" ) );
 } );
 
 QUnit.test( "option: errorClass with multiple classes", function( assert ) {
@@ -984,13 +984,13 @@ QUnit.test( "option: errorClass with multiple classes", function( assert ) {
 		errorClass: "error error1 error2"
 	} );
 	form.valid();
-	assert.ok( form.is( ":has(span:visible:has(.error#username-error))" ) );
-	assert.ok( form.is( ":has(span:visible:has(.error1#username-error))" ) );
-	assert.ok( form.is( ":has(span:visible:has(.error2#username-error))" ) );
+	assert.ok( form.is( ":has(span:visible:has(.error#username=error))" ) );
+	assert.ok( form.is( ":has(span:visible:has(.error1#username=error))" ) );
+	assert.ok( form.is( ":has(span:visible:has(.error2#username=error))" ) );
 	$( "#username" ).focus().trigger( "focusin" );
-	assert.ok( !form.is( ":has(span:visible:has(.error#username-error))" ) );
-	assert.ok( !form.is( ":has(span:visible:has(.error1#username-error))" ) );
-	assert.ok( !form.is( ":has(span:visible:has(.error2#username-error))" ) );
+	assert.ok( !form.is( ":has(span:visible:has(.error#username=error))" ) );
+	assert.ok( !form.is( ":has(span:visible:has(.error1#username=error))" ) );
+	assert.ok( !form.is( ":has(span:visible:has(.error2#username=error))" ) );
 } );
 
 QUnit.test( "defaultMessage(), empty title is ignored", function( assert ) {
